@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="./imgs/netflix-favicon.png">
+    <title>Netflix [Clone]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header class="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" onclick="showUnderConstruction()">Sobre</a></li>
+                    <li><a href="trailer.html" target="_blank">Trailer</a></li>
+                    <li>
+                        <img alt="Netflix" src="./imgs/netflix-logo.png">
+                    </li>
+                    <li><a href="index.html" onclick="showUnderConstruction()">Atores</a></li>
+                    <li><a href="index.html" onclick="showUnderConstruction()">Avaliações</a></li>
+                </ul>
+            </div>
+        </header>
+
+        
+        <aside class="social-sidebar">
+            <a href="#" onclick="shareOnSocialMedia('facebook')"><i class='bx bxl-facebook'></i></a>
+            <a href="#" onclick="shareOnSocialMedia('twitter')"><i class='bx bxl-twitter'></i></a>
+            <a href="#" onclick="shareOnSocialMedia('instagram')"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.linkedin.com/in/rafael-corr%C3%AAa-0a61b326b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/rafaelscdev" target="_blank"><i class='bx bxl-github'></i></a>
+        </aside>
+
+        
+        <div class="content-wrapper">
+            
+            <div class="poster-info">
+                <div class="poster-container">
+                    <img class="poster" src="./imgs/poster.png" alt="Poster da Série">
+                </div>
+                <div class="info_serie">
+                    <h4 class="titulo">Supernatural</h4>
+                    <h6 class="genero m-t-14">Drama, Mistério, Terror</h6>
+                    <span class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>In id lectus id mauris porttitor rutrum sit amet vel augue.<br> Nam varius efficitur sem eu varius. Donec ut diam est.<br> Proin venenatis sodales lorem fermentum tempus. <br>Nulla lobortis suscipit neque.</span>
+                    <div class="buttons">
+                        <button class="play">Assistir</button>
+                        <button class="add-list">Adicionar à Lista</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="seasons-episodes">
+            <div class="row m-t-56">
+                <span>1ª Temporada</span>
+                <img src="./imgs/chevron-left.png" alt="Anterior">
+                <img src="./imgs/chevron-right.png" alt="Próximo">
+            </div>
+            <div class="episodios" id="episodios">
+                
+            </div>
+        </div>
+
+        
+        <div class="recommendations">
+            <h2>Recomendações</h2>
+            <div class="recommendations-list">
+                
+                <div class="recommendation-item">
+                    <img src="imgs/supernaturalAnime.png" alt="Pôster do Filme Recomendado">
+                    <p>Supernatural: The Animation</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; Rafael Corrêa, FutureDev Nature. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
